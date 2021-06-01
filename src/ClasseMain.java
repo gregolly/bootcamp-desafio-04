@@ -9,7 +9,7 @@ public class ClasseMain {
 //        outraClassePrimeiro.alteraVariavel();
 //        primeiro.metodoPublico();
 
-        Carro carro = new Carro(4, 4);
+        Carro carro = new Carro(5, 4, 4, 5, 222222, 2020, "Flex");
         carro.setCor(Carro.PRETA);
         carro.imprimeValores();
     }

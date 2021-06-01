@@ -10,50 +10,78 @@ public class Carro {
     private Integer anoFabri;
     private String tipoCombustivel;
 
-    public Carro(Integer quantidadePneus, Integer quantidadeCalotas) {
+    public Carro(
+            Integer quantidadePneus,
+            Integer quantidadeCalotas,
+            Integer quantidadeDeParafusos,
+            Integer quantidadePortas,
+            long numeroChassi,
+            Integer anoFabri,
+            String tipoCombustivel
+    ) {
         setQuantidadePneus(quantidadePneus);
+        setQuantidadeCalotas(quantidadeCalotas);
+        setQuantidadeDeParafusos(quantidadeDeParafusos);
+        setQuantidadePortas(quantidadePortas);
+        setNumeroChassi(numeroChassi);
+        setAnoFabri(anoFabri);
+        setTipoCombustivel(tipoCombustivel);
     }
 
     public Integer getQuantidadePneus() {
-        return quantidadePneus + 2;
+        return quantidadePneus;
+    }
+
+    public void setQuantidadePneus(Integer quantidadePneus) {
+        this.quantidadePneus = quantidadePneus;
     }
 
     public Integer getQuantidadeCalotas() {
         return quantidadePneus;
     }
 
+    public void setQuantidadeCalotas(Integer calotas) {
+        this.quantidadeCalotas = calotas;
+    }
+
     public Integer getQuantidadePortas() {
-        return quantidadePortas = 5;
+        return quantidadePortas;
+    }
+
+    public void setQuantidadePortas(Integer portas) {
+        this.quantidadePortas = portas;
     }
 
     public long getNumeroChassi() {
-        return numeroChassi = 3281372;
+        return numeroChassi;
+    }
+
+    public void setNumeroChassi(long chassi) {
+        this.numeroChassi = chassi;
     }
 
     public Integer getAnoFabri() {
-        return anoFabri = 2021;
+        return anoFabri;
+    }
+
+    public void setAnoFabri(Integer ano) {
+        this.anoFabri = ano;
     }
 
     public String getTipoCombustivel() {
-        return tipoCombustivel = "Gasolina";
+        return tipoCombustivel;
     }
 
-//    public void setQuantidadeCalotas(Integer calotas) {
-//        System.out.println(calotas);
-//    }
+    public void setTipoCombustivel(String combustivel) {
+        this.tipoCombustivel = combustivel;
+    }
 
     public Integer getQuantidadeDeParafusos() {
-        return quantidadePneus * 4;
+        return quantidadeDeParafusos * 4;
     }
 
-//    public void setQuantidadeDeParafusos() {
-//        this.quantidadeDeParafusos = quantidadeDeParafusos;
-//    }
-
-    public void setQuantidadePneus(Integer quantidadePneus) {
-        quantidadeCalotas = quantidadePneus;
-        quantidadeDeParafusos = quantidadePneus * 4;
-        this.quantidadePneus = quantidadePneus;
+    public void setQuantidadeDeParafusos(Integer parafusos) {
+        this.quantidadeDeParafusos = parafusos;
     }
 
     public void setCor(String cor) {
