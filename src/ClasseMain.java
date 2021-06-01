@@ -10,7 +10,7 @@ public class ClasseMain {
 //        primeiro.metodoPublico();
 
         Carro carro = new Carro(4, 4);
-        carro.setCor(Carro.VERMELHO);
+        carro.setCor(Carro.PRETA);
         carro.imprimeValores();
     }
 }
